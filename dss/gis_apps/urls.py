@@ -1,0 +1,28 @@
+from django.conf.urls import patterns, include, url
+
+urlpatterns = patterns('',
+                       url(r'^basemap$','gis_apps.views.gisbase'),
+                       url(r'^province$','gis_apps.views.province'),
+                       url(r'^stations$','gis_apps.views.stations'),
+                       url(r'^csv$','gis_apps.views.some_view'),   
+                       url(r'^data_review$','gis_apps.views.data_review'),
+                       url(r'^data_download$','gis_apps.views.data_download'),
+                       url(r'^update_geojson$','gis_apps.views.update_geojson'),
+                       url(r'^show_graph$','gis_apps.views.show_graph'),
+                       url(r'^uploadmap$','gis_apps.views.upload_map'),
+                       url(r'^confirm_upload_map$','gis_apps.views.confirm_upload_map'),
+					   url(r'^statistic_data$','gis_apps.views.statistic_data'),
+                       url(r'^resample_data$','gis_apps.views.resample_data'),
+                       url(r'^histogram_statistics$','gis_apps.views.histogram_statistics'),
+                       url(r'^averagemonthly_statistics$','gis_apps.views.averagemonthly_statistics'),
+                       url(r'^extract_data$','gis_apps.views.extract_data'),
+                       url(r'^export2swat$','gis_apps.views.export2swat'),
+                       url(r'^upload_model_file$','gis_apps.views.upload_model_file'),
+                       url(r'^confirm_model_file$','gis_apps.views.confirm_model_file'),
+                       url(r'^validation_analysis$','gis_apps.views.validation_analysis'),
+                       url(r'^multivariable_statistic$','gis_apps.views.multivariable_statistic'),
+                       url(r'^blank$','gis_apps.views.blank'),
+                       url(r'^general_multivariable_statistic$','gis_apps.views.general_multivariable_statistic'),
+                       url(r'^validation_residual_analysis$','gis_apps.views.validation_residual_analysis'),
+                       url(r'^generate_swat_wgn$','gis_apps.views.generate_swat_wgn')
+                       )
